@@ -39,12 +39,21 @@ To separate private thoughts (Master Network) from public documentation (Content
 * **Master Vault (Private):** `~/AppData/ObsidianVaults/KnowledgeNet`
 * **Public Vault (GitHub):** `~/AppData/ObsidianVaults/KnowledgeNet/KnowledgeNetPublic`
 
-**Action:** Prevent Git from tracking private data by creating a `.gitignore` in the Master Vault. This ensures the public repository stays separate:
+#### 1. Isolate the Public Vault (Master Vault Level)
+Prevent Git from tracking private data by creating a `.gitignore` in the Master Vault. This ensures the public repository stays separate:
 
 ```bash
 cd ~/AppData/ObsidianVaults/KnowledgeNet
 echo "KnowledgeNetPublic/" > .gitignore
 ```
+#### 2. Initialize the Public Vault (Public Vault Level)
+The public folder is initialized as a standalone repository. Local configuration files are immediately excluded:
+
+```bash
+cd ~/AppData/ObsidianVaults/KnowledgeNet/KnowledgeNetPublic
+git init
+echo ".obsidian/" > .gitignore
+``
 
 ## 2. Google Colab Setup (The Laboratory)
 
