@@ -139,4 +139,4 @@ To avoid manual terminal commands for every update, the **Git** community plugin
 4. **Pull on startup (switch):** turn on.
 5. **Auto commit-and-sync only stages files (switch):** turn off.
 
-> **Tip:** Force synchrionzation by typing `strg + p`.
+> **Tip:** Force synchrinization by typing `strg + p` and klicking 'Git: push'.
