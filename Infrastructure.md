@@ -131,9 +131,9 @@ git push -u origin main
 
 ## 5. Automation with Obsidian Git (Optional)
 
-To avoid manual terminal commands for every update, the **Obsidian Git** community plugin is used.
+To avoid manual terminal commands for every update, the **Git** community plugin is used.
 
-1. **Install:** Settings -> Community Plugins -> Browse -> "Obsidian Git".
+1. **Install:** Settings -> Community Plugins -> Browse -> "Git".
 2. **Setup:** - **Vault backup interval:** Set to 10-30 minutes for auto-sync.
    - **Commit message:** Default to {{date}}.
 1. **Usage:** Look for the Git icon in the left sidebar to see pending changes or click to push manually.
