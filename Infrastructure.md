@@ -53,7 +53,7 @@ The public folder is initialized as a standalone repository. Local configuration
 cd ~/AppData/ObsidianVaults/KnowledgeNet/KnowledgeNetPublic
 git init
 echo ".obsidian/" > .gitignore
-``
+```
 
 ## 2. Google Colab Setup (The Laboratory)
 
