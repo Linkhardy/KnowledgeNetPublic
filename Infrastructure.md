@@ -139,4 +139,4 @@ To avoid manual terminal commands for every update, the **Git** community plugin
 4. **Pull on startup (switch):** turn on.
 5. **Auto commit-and-sync only stages files (switch):** turn off.
 
-> **Tip:** Force synchronization Press <kbd>Ctrl</kbd> and click 'Git: push'.
+> **Tip:** Force synchronization Press <kbd>Ctrl</kbd> + <kbd>P</kbd> and click 'Git: push'.
