@@ -134,6 +134,9 @@ git push -u origin main
 To avoid manual terminal commands for every update, the **Git** community plugin is used.
 
 1. **Install:** Settings -> Community Plugins -> Browse -> "Git".
-2. **Setup:** - **Vault backup interval:** Set to 10-30 minutes for auto-sync.
-   - **Commit message:** Default to {{date}}.
-1. **Usage:** Look for the Git icon in the left sidebar to see pending changes or click to push manually.
+2. **Setup:** - **Auto commit-and-sync interval (minutes):** Set to 10 minutes.
+3. **Auto pull interval (minutes):** Set to 10 minutes.
+4. **Pull on startup (switch):** turn on.
+5. **Auto commit-and-sync only stages files (switch):** turn off.
+
+> **Tip:** Force synchrionzation by typing `strg + p`.
