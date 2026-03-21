@@ -133,10 +133,10 @@ git push -u origin main
 
 To avoid manual terminal commands for every update, the **Git** community plugin is used.
 
-1. **Install:** Settings -> Community Plugins -> Browse -> "Git".
+1. **Install:** `Settings` -> `Community Plugins` -> `Browse` -> "Git".
 2. **Setup:** - **Auto commit-and-sync interval (minutes):** Set to 10 minutes.
 3. **Auto pull interval (minutes):** Set to 10 minutes.
 4. **Pull on startup (switch):** turn on.
 5. **Auto commit-and-sync only stages files (switch):** turn off.
 
-> **Tip:** Force synchrinization by typing `strg + p` and klicking 'Git: push'.
+> **Tip:** Force synchronization Press <kbd>Ctrl</kbd> and click 'Git: push'.
