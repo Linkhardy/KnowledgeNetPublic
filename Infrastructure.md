@@ -60,11 +60,15 @@ echo "KnowledgeNetPublic/" > .gitignore
 ### Step 1: Account & Repository Creation
 1. **Create Account:** If you don't have one, sign up at [github.com](https://github.com/).
    * **Note:** Remember the **email address** and **username** you use here; they are required for setting up the automated identification of your data backups in Step 3.
-2. **Create Repository:** - Click the **"+"** icon (top right) -> **New repository**.
+1. **Create Repository for Public Vault:** - Click the **"+"** icon (top right) -> **New repository**.
    - Name it `KnowledgeNetPublic`.
-   - Set visibility to **Public** (or Private if you prefer).
+   - Set visibility to **Public**.
    - **Important:** Do NOT initialize with a README, license, or .gitignore (we will do this via terminal).
-   - Click **Create repository**.
+   - Click **Create repository.**
+   - for Private Vault:**.
+   - **Create Repository for Private Vault** as described above, with the following changes:
+	   - name it `KnowledgeNet`.
+	   - Set visibility to **Private**
 
 ### Step 2: Generating a Personal Access Token (PAT)
 Since GitHub deprecated password authentication for terminal operations, you must use a PAT.
@@ -104,3 +108,23 @@ git push -u origin main
 ```
 
 *Note: When prompted for a password, paste your **PAT**, not your GitHub password.*
+
+### Step 5: Initializing the Private Backup
+The Master Vault was initialized as a separate Git repository to secure all private notes:
+
+cd ~/AppData/ObsidianVaults/KnowledgeNet
+git init
+git add .
+git commit -m "Initial private setup"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/KnowledgeNet.git
+git push -u origin main
+
+## 5. Automation with Obsidian Git (Optional)
+
+To avoid manual terminal commands for every update, the **Obsidian Git** community plugin is used.
+
+1. **Install:** Settings -> Community Plugins -> Browse -> "Obsidian Git".
+2. **Setup:** - **Vault backup interval:** Set to 10-30 minutes for auto-sync.
+   - **Commit message:** Default to {{date}}.
+1. **Usage:** Look for the Git icon in the left sidebar to see pending changes or click to push manually.
